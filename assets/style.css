@@ -1,0 +1,380 @@
+/* ==========================================
+   Netflix Analytics Dashboard Theme
+========================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html,
+body,
+[class*="css"]{
+    font-family:'Poppins',sans-serif;
+}
+
+/* ==========================================
+   Main Background
+========================================== */
+
+.stApp{
+
+    background:linear-gradient(
+        135deg,
+        #0F172A,
+        #111827,
+        #1E293B
+    );
+
+    color:white;
+
+}
+
+/* ==========================================
+   Sidebar
+========================================== */
+
+section[data-testid="stSidebar"]{
+
+    background:#111827;
+    border-right:2px solid #E50914;
+
+}
+
+/* ==========================================
+   Headers
+========================================== */
+
+h1{
+
+    color:#E50914;
+    font-size:42px;
+    font-weight:700;
+
+}
+
+h2{
+
+    color:white;
+
+}
+
+h3{
+
+    color:#F3F4F6;
+
+}
+
+/* ==========================================
+   Cards
+========================================== */
+
+.card{
+
+    background:#1F2937;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    box-shadow:
+        0px 5px 20px rgba(0,0,0,.45);
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0px 15px 35px rgba(229,9,20,.35);
+
+}
+
+/* ==========================================
+   KPI Cards
+========================================== */
+
+.kpi{
+
+    background:linear-gradient(
+        145deg,
+        #1F2937,
+        #374151
+    );
+
+    border-left:6px solid #E50914;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    color:white;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.kpi:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+
+.stButton>button{
+
+    width:100%;
+
+    background:#E50914;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    padding:12px;
+
+}
+
+.stButton>button:hover{
+
+    background:#FF1F1F;
+
+    transform:scale(1.03);
+
+}
+
+/* ==========================================
+   Metrics
+========================================== */
+
+div[data-testid="metric-container"]{
+
+    background:#1F2937;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    border-left:6px solid #E50914;
+
+    box-shadow:0px 5px 15px rgba(0,0,0,.3);
+
+}
+
+/* ==========================================
+   DataFrame
+========================================== */
+
+div[data-testid="stDataFrame"]{
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+/* ==========================================
+   Success Alert
+========================================== */
+
+div[data-baseweb="notification"]{
+
+    border-radius:15px;
+
+}
+
+/* ==========================================
+   Plotly Charts
+========================================== */
+
+.js-plotly-plot{
+
+    border-radius:20px;
+
+}
+
+/* ==========================================
+   Footer
+========================================== */
+
+.footer{
+
+    margin-top:50px;
+
+    text-align:center;
+
+    color:#9CA3AF;
+
+}
+
+/* ==========================================
+   Animation
+========================================== */
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.main{
+
+animation:fadeIn .8s ease-in-out;
+
+}
+
+/* ==========================================
+   Scrollbar
+========================================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#111827;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#E50914;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#FF3030;
+
+}
+
+/* ==========================================
+   Tables
+========================================== */
+
+table{
+
+border-radius:15px;
+
+overflow:hidden;
+
+}
+
+/* ==========================================
+   Input Boxes
+========================================== */
+
+.stSelectbox{
+
+border-radius:12px;
+
+}
+
+/* ==========================================
+   Expander
+========================================== */
+
+.streamlit-expanderHeader{
+
+font-weight:bold;
+
+font-size:18px;
+
+}
+
+/* ==========================================
+   Progress Bar
+========================================== */
+
+.stProgress>div>div{
+
+background:#E50914;
+
+}
+
+/* ==========================================
+   Download Button
+========================================== */
+
+.stDownloadButton>button{
+
+background:#22C55E;
+
+color:white;
+
+border-radius:12px;
+
+border:none;
+
+font-weight:bold;
+
+}
+
+.stDownloadButton>button:hover{
+
+background:#16A34A;
+
+}
+
+/* ==========================================
+   KPI Colors
+========================================== */
+
+.users{
+
+border-left:6px solid #3B82F6;
+
+}
+
+.watch{
+
+border-left:6px solid #22C55E;
+
+}
+
+.drop{
+
+border-left:6px solid #EF4444;
+
+}
+
+.rating{
+
+border-left:6px solid #FACC15;
+
+}
+
+/* ==========================================
+   End
+========================================== */
